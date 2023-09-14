@@ -1,0 +1,56 @@
+body{
+    background-image: url("https://cdn.pixabay.com/photo/2016/11/17/23/29/programming-1832991_1280.png");
+    font-family: Courier;
+    font-size: 1.1em;
+  }
+  
+  #title, #description{
+    color: #FFFFFF;
+    text-align: center;
+  }
+  
+  form{
+    background-color: #171717;
+    color: #e11840;
+    width: 90vw;
+    max-width: 600px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+  }
+  div{
+    margin: 0 3em;
+  }
+  
+  label{
+    display: block;
+    margin: 0.5em 0;
+  }
+  
+  span{
+    Font-size: 0.7em;
+  }
+  
+  input[type="text"], input[type="email"], input[type="number"], select, textarea{
+    color: #2cdc11;
+    background-color: #000011;
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  input[type="text"], input[type="email"], input[type="number"], select{
+    height: 2.3em;
+  }
+  
+  button[type="submit"]{
+    display: block;
+    width: 80%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1em;
+    background-color: #2cdc11;
+    border-color: #2cdc11;
+    min-width: 300px;
+    color: #FFFFFF;
+  }
