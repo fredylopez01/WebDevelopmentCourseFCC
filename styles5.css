@@ -19,11 +19,12 @@ body{
     padding-top: 1.5em;
     padding-bottom: 0.5em;
   }
+  
   div{
     margin: 0 3em;
   }
   
-  label{
+  label, p{
     display: block;
     margin: 0.5em 0 0 0;
   }
@@ -58,4 +59,16 @@ body{
     min-width: 300px;
     color: #FFFFFF;
     border-radius: 5px;
+  }
+
+  #name::placeholder, 
+  #email::placeholder, 
+  #number::placeholder,
+  #comments::placeholder{
+    color: #2cdc11;
+  }
+
+  #submit:hover{
+    background-color: #f00635;
+    border-color: #f00635;
   }
