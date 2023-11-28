@@ -1,0 +1,74 @@
+#main{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 10px 5px;
+    padding: 10px;
+    text-align: center;
+    background-color: #000033;
+    color: white;
+    border-radius: 10px;
+}
+#title{
+    color: #00FF44;
+}
+#main p:first-of-type{
+    width:  60%;
+    margin: 0 auto;
+    font-style: italic;
+}
+#img-div{
+    background-color: #151572;
+    padding: 25px 50px;
+    margin: 20px auto;
+    width: 80vw;
+    object-fit: cover;
+}
+#image{
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+}
+#tribute-info h2{
+    color: #b20403;
+}
+#img-div>figcaption{
+    width: 65%;
+    margin: 0 auto;
+}
+#tribute-info ul{
+    margin: 0 auto;
+    width: 50vw;
+    text-align: justify;
+}
+#tribute-info ul>li{
+    margin-bottom: 1vh;
+}
+.year{
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+.reseña,
+.message{
+    width: 70vw;
+    margin: 3vh auto;
+    text-align: justify;
+}
+.message{
+    font-style: italic;
+}
+@media screen and (max-width:800px) {
+    #main{
+        margin: 2px;
+    }
+    #img-div{
+        padding: 0;
+        margin: 0 auto;
+        object-fit: cover;
+        background: #00FF44;
+    }
+    #image{
+        width: 80vh;
+        height: auto;
+        margin: 0 auto;
+        padding: 0;
+    }
+}
