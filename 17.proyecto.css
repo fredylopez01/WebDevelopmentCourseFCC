@@ -1,0 +1,201 @@
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+    padding: 1rem;
+}
+#header{
+    position: fixed;
+    width: 96.5vw;
+    top: 1rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: red;
+    color: white;
+    padding: 5px;
+}
+#header-img{
+    width: 100px;
+    object-fit: cover;
+}
+#header h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#nav-bar a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+    font-family: sans-serif;
+    margin-right: 1rem;
+}
+.imgBackground{
+    position: static;
+    margin-top: 90px;
+    width: 96.5vw;
+    padding: 10px 25vw;
+    background-image: linear-gradient(120deg, #011f5b04 0%, #011F5B04 100%), url(./17.hamburguer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.imgBackground>img{
+    width: 36.5vw;
+    margin: 0 auto;
+}
+.form{
+    padding: 6rem;
+}
+#form{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 50vw;
+    margin: auto;
+}
+#form h2{
+    font-family: sans-serif;
+    color: brown;
+    text-shadow: 1px 1px 0 black;
+}
+#form input{
+    font-size: 1.1rem;
+}
+#form input[type="email"]{
+    width: 60%;
+}
+#form input[type="submit"]{
+    padding: 5px;
+    background-color: rgb(240, 240, 72);
+    border: none;
+    border-radius: 10px;
+}
+#inicio{
+    width: 60vw;
+    font-family: sans-serif;
+    margin: 0 auto;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+#inicio h2,
+#video h2{
+    margin-bottom: 13px;
+}
+#inicio p::first-letter{
+    font-size: 3rem;
+    float: left;
+    margin-right: 10px;
+    background-color: white;
+    color: crimson;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 3px 3px 0 crimson;
+    text-shadow: 2px 2px 0 black;
+}
+#secVideo{
+    width: 80vw;
+    font-family: sans-serif;
+    margin: 20px auto;
+    text-align: center;
+    display: block;
+}
+#video{
+    width: 80%;
+    position: initial;
+}
+#products{
+    width: 80vw;
+    display: block;
+    margin: 20px auto;
+    height: auto;
+}
+#products>ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: center;
+}
+#products>ul>li{
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px black;
+}
+li::marker{
+ content: ' ';
+}
+.nameProduct{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+}
+.imgProduct{
+    width: 200px;
+    object-fit: cover;
+}
+.price{
+    font-size: 45px;
+}
+.buyButton{
+    padding: 5px;
+    background: #f3f30f;
+    margin-top: 3px;
+    border-radius: 2px;
+}
+.footer{
+    border-top: 30px solid #f3f30f;
+}
+.footer>.law{
+    display: flex;
+    justify-content: space-evenly;
+}
+.social-media{
+    font-size: 3.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    padding-left:  8vw;
+    color: #fff;
+}
+.social-media a{
+    color: red;
+    margin: 0 .3vw;
+    padding: 0;
+    border-radius: 10px;
+}
+.social-media a:hover{
+    transform: scale(105%);
+    color: yellow;
+    text-shadow: 3px 3px 4px black;
+}
+
+@media screen and (max-width:700px) {
+    #inicio, 
+    #secVideo,
+    #products{
+        width: 100%;
+    }
+    #header{
+        justify-content: space-evenly;
+    }
+    #nav-bar{
+        width: 100%;
+    }
+    .form{
+        padding: 20px;
+    }
+    #form{
+        width: 100%;
+    }
+    #products>ul{
+        flex-direction: column;
+    }
+}
